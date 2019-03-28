@@ -1,9 +1,8 @@
 /* Styling for the Electronic Gaming Society at RIT website */
-html,
 
 @font-face{
 	font-family: bignoodletitling;
-	src:url("bignoodletitling.ttf");
+	src:url("big_noodle_titling.ttf");
 }
 @font-face{
 	font-family: roboto;
@@ -19,7 +18,7 @@ html,
 }
 @font-face{
 	font-family: ARIALNB;
-	src:url ("ARIALNB");
+	src:url ("ARIALNB.ttf");
 }
 
 b{ 
@@ -35,6 +34,7 @@ body {
 h1 {
 	font-family: "bignoodletitling", "ARIALNB", "roboto-bold", sans-serif;
 	font-size: 30px;
+  font-weight: normal;
 }
 hr {
 	height: 8px;
