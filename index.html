@@ -1,177 +1,227 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Electronic Gaming Society at RIT</title>
-	
-	<meta name="viewport" content="wideth=device-width, initial-scale=1">
-	<meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
-	
-	<link type="text/css" rel="stylesheet" href="style.css">
-	
-	<style type="text/css">
-		body { margin:0; }
-	</style>
-	
-</head>
-<body>
-<!--Banner Image with Logo-->
-	<img id="banner" src="images/header.png" align=center width=100%>
-	
-<!--Navigation Bar-->
-	<div class="nav" id="navbar">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="membership.html">Membership</a></li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="communities.html">Communities</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
-	
-<!--Sticky Function-->
-	<script>
-		window.onscroll = function() {myFunction()};
-		var navbar = document.getElementById("navbar");
-		var sticky = navbar.offsetTop;
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			} else {
-				navbar.classList.remove("sticky");
-			}
-		}
-	</script>
+    <head>
+        <title>Electronic Gaming Society at RIT</title>
 
-<!--Slide Show https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-	<div class="slideshow-container">
-		<div class="mySlides fade">
-			<div class="numbertext">1 / 3</div>
-			<img src="images\zerofest.jpg" style="width:100%">
-		</div>
-		<div class="mySlides fade">
-			<div class="numbertext">2 / 3</div>
-			<img src="images\lanoverview.jpg" style="width:100%">
-		</div>
-		<div class="mySlides fade">
-			<div class="numbertext">3 / 3</div>
-			<img src="images\lantable.jpg" style="width:100%">
-		</div>
-		<!--Button-->
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	<br>
-	<!--Dots-->
-		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-			<span class="dot" onclick="currentSlide(3)"></span> 
-		</div>
-	</div>
-	
-<!--Slide Show Function-->
-<script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
-	// Next/previous controls
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-	// Thumbnail image controls
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1} 
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none"; 
-	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block"; 
-	  dots[slideIndex-1].className += " active";
-	}
-</script>
+        <meta name="viewport" content="wideth=device-width, initial-scale=1">
+        <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
 
-<!--Page Content-->
-	<div class="content">
-		<p><br>The Electronic Gaming Society is a student-run club for gamers at Rochester Institute of Technology. Join us every Wednesday for our <a href="events.html">weekly game nights</a> from 8pm to 11pm in the Student Alumni Union's Davis Room Cafeteria. Join our discord server and follow us on social media to stay up to date on our event announcements.</p>
+        <link type="text/css" rel="stylesheet" href="style.css">
 
-	<!--<h1 align="center">Connect With Us On Social Media </h1>-->
-	<div align="center">
-		<a href="https://www.facebook.com/egsrit" id="commlink"><img src="images/icons/facebook.png" alt="Facebook Link"></a>
-		<a href="https://www.twitter.com/egsrit" id="commlink"><img src="images/icons/twitter.png" alt="Twitter Link"></a> 
-		<a href="https://www.instagram.com/egsrit" id="commlink"><img src="images/icons/instagram.png" alt="Instagram Link"></a> 
-		<a href="https://www.discord.gg/egsrit" id="commlink"><img src="images/icons/discord.png" alt="Discord Link"></a>
-		<a href="https://www.twitch.tv/egsrit" id="commlink"><img src="images/icons/twitch.png" alt="Twitch Link"></a> 
-	</div>
-	<br>
-	<!-- Begin Mailchimp Signup Form -->
-		<div class="mcdiv">
-			<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-			<style type="text/css">
-				#mc_embed_signup{background:#fff; ; font:14px Helvetica,Arial,sans-serif; width:100%;}
-				/*Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file.*/
-			</style>
-			<div id="mc_embed_signup">
-				<form action="https://egsrit.us14.list-manage.com/subscribe/post?u=fe601b8447a6fa22601a03fe5&amp;id=4c1ea3053d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<div id="mc_embed_signup_scroll">
-						<label for="mce-EMAIL"><h1>Subscribe to our Weekly Newsletter</h1></label>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-				<!--Don't Edit Below-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fe601b8447a6fa22601a03fe5_4c1ea3053d" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-					</div>
-				</form>
-			</div>
-		</div>
-	<!--End mc_embed_signup-->
-	</div>
+        <style type="text/css">
+            body { margin:0; }
+        </style>
 
-</body>
+    </head>
+    <body>
+        <!--Banner Image with Logo-->
+        <img id="banner" src="images/header.png" align=center width=100%>
 
-<footer>
-	
-	<br>
-<!--FOOTER-->	
-	<div class="foot">
-		<a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>
-		
-		<!--Social Media Link Bar-->
-		<div class="connect">
-			<p style="display:inline">Connect With Us</p><br>
-			<div class="sociallinks" id="navbar">
-				<a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
-				<a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a> 
-				<a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a> 
-				<a href="https://www.discord.gg/egsrit" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
-				<a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a> 
-			</div>
-		</div>
-		
-		<!--Nav Links-->
-		<div class="footlinks">
-			<p style="font-size:15px;display:inline"><b>Site Navigation</b></p><br>
-			<a href="about.html">About Us</a><br>
-			<a href="library.html">Game & Server Library</a><br>
-			<a href="membership.html">Membership</a><br>
-			<a href="events.html">Upcoming Events</a><br>
-					
-			<p style="font-size:15px;display:inline"><b>Communities</b></p><br>
-			<a href="blizzard.html">Blizzard Gaming</a><br>
-			<a href="pokemon.html">Pokemon League</a><br>
-			<a href="speedruns.html">Speedruns Rochester</a><br>
-		</div>
-		
-		<p style="font-size:10px;padding:5px" align="center">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Stoney Reed
-		</p>
-	</div>
-	
-</footer>
+        <!--Navigation Bar-->
+        <div class="nav" id="navbar">
+            <ul>
+                <li><a href="index.html" id="homeI">Home</a></li>
+                <li><a href="about.html" id="aboutI">About</a></li>
+                <li><a href="membership.html" id="membershipI">Membership</a></li>
+                <li><a href="events.html" id="eventsI">Events</a></li>
+                <li><a href="communities.html" id="communitiesI">Communities</a></li>
+                <li><a href="contact.html" id="contactI">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Sticky Function-->
+        <script>
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <!-- Pop Up Box -->
+        <div id="popUp" class="popup">
+            <!-- Pop Up Content -->
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <p>Thanks for visiting the EGS website!
+                    <br>This site is still a work inprogress
+                    and is not yet fully mobile responsive.
+                    <br>Thank you for your patience.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Pop Up Box -->
+        <script>
+            // Get the popup
+            var popup = document.getElementById('popUp');
+
+            // Get the <span> element that closes the popup
+            var span = document.getElementsByClassName("close")[0];
+
+            // Open up Pop up message box
+            (function() {
+                popup.style.display = "block";
+            })();
+
+            // Exit pop-up using the span
+            span.onclick = function() {
+                popup.style.display = "none";
+            }
+
+            // Exit pop-up if click anywhere else
+            window.onclick = function(event) {
+                if (event.target == popup) {
+                    popup.style.display = "none";
+                }
+            }  
+        </script>
+
+        <!--Slide Show https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images\zerofest.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images\lanoverview.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images\lantable.jpg" style="width:100%">
+            </div>
+            <!--Button-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <!--Dots-->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+
+        <!--Slide Show Function-->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1} 
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block"; 
+                dots[slideIndex-1].className += " active";
+            }
+            // Pop up about responsiveness
+            (function() {
+                // your page initialization code here
+                // the DOM will be available here
+
+            })();
+        </script>
+
+        <!--Page Content-->
+        <div class="content">
+            <p><br>The Electronic Gaming Society is a student-run club for gamers at Rochester Institute of Technology. Join us every Wednesday for our <a href="events.html">weekly game nights</a> from 8pm to 11pm in the Student Alumni Union's Davis Room Cafeteria. Join our discord server and follow us on social media to stay up to date on our event announcements.</p>
+
+            <!--<h1 align="center">Connect With Us On Social Media </h1>-->
+            <div align="center">
+                <a href="https://www.facebook.com/egsrit" id="commlink"><img src="images/icons/facebook.png" alt="Facebook Link"></a>
+                <a href="https://www.twitter.com/egsrit" id="commlink"><img src="images/icons/twitter.png" alt="Twitter Link"></a> 
+                <a href="https://www.instagram.com/egsrit" id="commlink"><img src="images/icons/instagram.png" alt="Instagram Link"></a> 
+                <a href="https://www.discord.gg/egsrit" id="commlink"><img src="images/icons/discord.png" alt="Discord Link"></a>
+                <a href="https://www.twitch.tv/egsrit" id="commlink"><img src="images/icons/twitch.png" alt="Twitch Link"></a> 
+            </div>
+            <br>
+            <!-- Begin Mailchimp Signup Form -->
+            <div class="mcdiv">
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#fff; ; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                    /*Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file.*/
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="https://egsrit.us14.list-manage.com/subscribe/post?u=fe601b8447a6fa22601a03fe5&amp;id=4c1ea3053d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL"><h1>Subscribe to our Weekly Newsletter</h1></label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <!--Don't Edit Below-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fe601b8447a6fa22601a03fe5_4c1ea3053d" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--End mc_embed_signup-->
+        </div>
+
+    </body>
+
+    <footer>
+
+        <br>
+        <!--FOOTER-->	
+        <div class="foot">
+            <!-- EGS LOGO -->
+            <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
+
+            <!--Nav Links-->
+            <div class="footlinks">
+                <div class="subfootlinks1">
+                    <h3>Site Navigation</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="library.html">Game & Server Library</a>
+                    <a href="membership.html">Membership</a>
+                    <a href="events.html">Upcoming Events</a>
+                </div>
+
+                <div class="subfootlinks2">
+                    <h3>Communities</h3>
+                    <a href="blizzard.html">Blizzard Gaming</a>
+                    <a href="pokemon.html">Pokemon League</a>
+                    <a href="speedruns.html">Speedruns Rochester</a>
+                </div>
+            </div>
+
+            <!--Social Media Link Bar-->
+            <div class="connect">
+                <h3>Connect With Us</h3>
+                <div class="sociallinks" id="navbar">
+                    <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
+                    <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a> 
+                    <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a> 
+                    <a href="https://www.discord.gg/egsrit" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
+                    <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a> 
+                </div>
+            </div>
+
+            <p class="copyright">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Stoney Reed
+            </p>
+        </div>
+
+    </footer>
 </html>
