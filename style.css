@@ -340,6 +340,11 @@ ul {
     flex-flow: column;
 }
 
+.subfootServer {
+    display: flex;
+    flex-flow: column;
+}
+
 
 .connect{
     font-size: 15px;

@@ -1,200 +1,200 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Game Library - Electronic Gaming Society at RIT</title>
-	
-	<meta name="viewport" content="wideth=device-width, initial-scale=1">
-	<meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
-	
-	<link type="text/css" rel="stylesheet" href="style.css">
-	
-	<style type="text/css">
-		body { margin:0; }
-	</style>
-	
-</head>
-<body>
-<!--Banner Image with Logo-->
-	<img id="banner" src="images/header.png" align=center width=100%>
-	
-<!--Navigation Bar-->
-	<div class="nav" id="navbar">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="membership.html">Membership</a></li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="communities.html">Communities</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
-	
-<!--Sticky Function-->
-	<script>
-		window.onscroll = function() {myFunction()};
-		var navbar = document.getElementById("navbar");
-		var sticky = navbar.offsetTop;
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			} else {
-				navbar.classList.remove("sticky");
-			}
-		}
-	</script>
+    <head>
+        <title>Game Library - Electronic Gaming Society at RIT</title>
 
-<div class="content">	
-	<p>This is a growing list of all the games and game servers owned by EGS. <a href="membership.html">Premium Members</a> have the ability to rent game discs for one week at a time. Please note that games marked with an asterisk (*) are digital copies and not available to rent.</p>
-	
-	<button class="collapsible"><h1>EGS Game Servers</h1></button>
-		<ul class="games">
-			<li><b>Minecraft</b> 
-				<li style="margin:0px,0px,0px,10px">Vanilla Survival: mc.server-egsrit.com</li>
-				<li>Modded Survival: mc.server-egsrit.com:12345 </li>
-				</li>
-			<li><b>Gary's Mod</b> gm.server-egsrit.com</li>
-		</ul>
-	
-	<button class="collapsible"><h1>Nintendo Game Cube</h1></button>
-		<ul class="games">
-			<li>Fire Emblem: Path of Radiance</li>
-		</ul>
-	
-	<button class="collapsible"><h1>Nintendo Switch</h1></button>
-		<ul class="games">
-			<li>Pokemon: Let's Go, Pikachu!</li>
-			<li>Super Mario Party</li>
-			<li>Super Smash Bros. Ultimate</li>
-		</ul>
-	
-	<button class="collapsible"><h1>Nintendo Wii U</h1></button>
-		<ul class="games">
-			<li>Nintendo World</li>
-			<li>Sonic Boom: Rise of Lyric</li>
-			<li>Sonic Lost World</li>
-		</ul>
-		
-	<button class="collapsible"><h1>PlayStation 2</h1></button>
-		<ul class="games">
-			<li>Grand Theft Auto: San Andreas</li>
-			<li>Guilty Gear XX: Accent Core\\ Namco Transmission</li>
-			<li>Soulcalibur III</li>
-		</ul>
-		
-	<button class="collapsible"><h1>PlatStation 3</h1></button>
-		<ul class="games" style="columns:3">
-			<li>Army of Two</li>
-			<li>Assassin's Creed III</li>
-			<li>BlazBlue: Continuum Shift</li>
-			<li>BlazBlue: Continuum Shift Extend</li>
-			<li>Digimon: All-Star Rumble</li>
-			<li>Dynasty Warriors 7</li>
-			<li>Fifa 13</li>
-			<li>Little Big Planet 2</li>
-			<li>Marvel vs. Capcom 3</li>
-			<li>Mortal Kombat</li>
-			<li>MotorStorm</li>
-			<li>Naruto: Ultimate Ninja Storm 3</li>
-			<li>Prototype 2</li>
-			<li>Rayman Origins</li>
-			<li>Red Dead Redemption</li>
-			<li>Resident Evil 6</li>
-			<li>Resistance: Fall of Man</li>
-			<li>Resistance 2</li>
-			<li>Resistance 3</li>
-			<li>Rock Band 2 <i>(Equipment not available for rent)</i></li>
-			<li>Rock Band 3 <i>(Equipment not available for rent)</i></li>
-			<li>The Walking Dead: Survival Instinct</li>
-			<li>Transformers: Fall of Cybertron</li>
-			<li>Ultimate Marvel vs. Capcom</li>
-			<li>Uncharted 2: Among Thieves</li>
-			<li>Uncharted 3: Drake's Deception</li>
-		</ul>
-		
-	<button class="collapsible"><h1>PlayStation 4</h1></button>
-		<ul class="games" style="columns:3">
-			<li>Bloodborne</li>
-			<li>Call of Duty: Advanced Warfare</li>
-			<li>Call of Duty: Infinite Warfare</li>
-			<li>Destiny</li>
-			<li>Diablo: Reaper of Souls: Ultimate Evil Edition</li>
-			<li>Dragon Age: Inquisition</li>
-			<li>Dying Light</li>
-			<li>Fifa 16</li>
-			<li>Final Fantasy Type-0 HD</li>
-			<li>Final Fantasy XV</li>
-			<li>Grand Theft Auto V</li>
-			<li>Motorcycle Club</li>
-			<li>Need for Speed: Rivals</li>
-			<li>Overwatch: Origins Edition</li>
-			<li>Ratchet & Clank</li>
-			<li>Rock Band 4 <i>(Equipment not available for rent)</i></li>
-			<li>Star Wars: Battlefront</li>
-			<li>Street Fighters V</li>
-			<li>The King of Fighters XIV</li>
-			<li>Titanfall 2</li>
-			<li>The Evil Within</li>
-			<li>Mortal Combat X</li>
-		</ul>
-		
-	<button class="collapsible"><h1>Xbox 360</h1></button>
-		<ul class="games">
-			<li>Blur</li>
-			<li>Borderlands: The Pre-Sequel</li>
-			<li>Halo 3</li>
-		</ul>
-		
-	<button class="collapsible"><h1>Xbox One</h1></button>
-		<ul class="games" style="columns:3">
-			<li>Army of Two: The Devil's Cartel</li>
-			<li>Battlefield 4</li>
-			<li>Call of Duty: Black Ops II</li>
-			<li>Dark Souls III</li>
-			<li>Dead Rising 3</li>
-			<li>Devil May Cry</li>
-			<li>Fallout 4</li>
-			<li>Farcry 4</li>
-			<li>Gears of War 4</li>
-			<li>Just Dance 2014</li>
-			<li>Killer Instinct</li>
-			<li>Madden 16</li>
-			<li>Marvel vs. Capcom</li>
-			<li>NHL 15</li>
-			<li>Overwatch: Origins Edition</li>
-			<li>Titanfall</li>
-			<li>Tom Clancy's The Division</li>
-			<li>Quantum Break</li>
-		</ul>
-</div>
+        <meta name="viewport" content="wideth=device-width, initial-scale=1">
+        <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
 
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
+        <link type="text/css" rel="stylesheet" href="style.css">
 
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var games = this.nextElementSibling;
-		if (games.style.display === "block") {
-		  games.style.display = "none";
-		} else {
-		  games.style.display = "block";
-		}
-	  });
-	}
-</script>
+        <style type="text/css">
+            body { margin:0; }
+        </style>
 
-</body>
+    </head>
+    <body>
+        <!--Banner Image with Logo-->
+        <img id="banner" src="images/header.png" align=center width=100%>
+
+        <!--Navigation Bar-->
+        <div class="nav" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="communities.html">Communities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Sticky Function-->
+        <script>
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <div class="content">	
+            <p>This is a growing list of all the games and game servers owned by EGS. <a href="membership.html">Premium Members</a> have the ability to rent game discs for one week at a time. Please note that games marked with an asterisk (*) are digital copies and not available to rent.</p>
+
+            <button class="collapsible"><h1>EGS Game Servers</h1></button>
+            <ul class="games">
+                <li><b>Minecraft</b> 
+                <li style="margin:0px,0px,0px,10px">Vanilla Survival: mc.server-egsrit.com:12345</li>
+                <li>Modded Survival: mc.server-egsrit.com</li>
+                </li>
+            <li><b>Gary's Mod</b> gm.server-egsrit.com</li>
+            </ul>
+
+        <button class="collapsible"><h1>Nintendo Game Cube</h1></button>
+        <ul class="games">
+            <li>Fire Emblem: Path of Radiance</li>
+        </ul>
+
+        <button class="collapsible"><h1>Nintendo Switch</h1></button>
+        <ul class="games">
+            <li>Pokemon: Let's Go, Pikachu!</li>
+            <li>Super Mario Party</li>
+            <li>Super Smash Bros. Ultimate</li>
+        </ul>
+
+        <button class="collapsible"><h1>Nintendo Wii U</h1></button>
+        <ul class="games">
+            <li>Nintendo World</li>
+            <li>Sonic Boom: Rise of Lyric</li>
+            <li>Sonic Lost World</li>
+        </ul>
+
+        <button class="collapsible"><h1>PlayStation 2</h1></button>
+        <ul class="games">
+            <li>Grand Theft Auto: San Andreas</li>
+            <li>Guilty Gear XX: Accent Core\\ Namco Transmission</li>
+            <li>Soulcalibur III</li>
+        </ul>
+
+        <button class="collapsible"><h1>PlatStation 3</h1></button>
+        <ul class="games" style="columns:3">
+            <li>Army of Two</li>
+            <li>Assassin's Creed III</li>
+            <li>BlazBlue: Continuum Shift</li>
+            <li>BlazBlue: Continuum Shift Extend</li>
+            <li>Digimon: All-Star Rumble</li>
+            <li>Dynasty Warriors 7</li>
+            <li>Fifa 13</li>
+            <li>Little Big Planet 2</li>
+            <li>Marvel vs. Capcom 3</li>
+            <li>Mortal Kombat</li>
+            <li>MotorStorm</li>
+            <li>Naruto: Ultimate Ninja Storm 3</li>
+            <li>Prototype 2</li>
+            <li>Rayman Origins</li>
+            <li>Red Dead Redemption</li>
+            <li>Resident Evil 6</li>
+            <li>Resistance: Fall of Man</li>
+            <li>Resistance 2</li>
+            <li>Resistance 3</li>
+            <li>Rock Band 2 <i>(Equipment not available for rent)</i></li>
+            <li>Rock Band 3 <i>(Equipment not available for rent)</i></li>
+            <li>The Walking Dead: Survival Instinct</li>
+            <li>Transformers: Fall of Cybertron</li>
+            <li>Ultimate Marvel vs. Capcom</li>
+            <li>Uncharted 2: Among Thieves</li>
+            <li>Uncharted 3: Drake's Deception</li>
+        </ul>
+
+        <button class="collapsible"><h1>PlayStation 4</h1></button>
+        <ul class="games" style="columns:3">
+            <li>Bloodborne</li>
+            <li>Call of Duty: Advanced Warfare</li>
+            <li>Call of Duty: Infinite Warfare</li>
+            <li>Destiny</li>
+            <li>Diablo: Reaper of Souls: Ultimate Evil Edition</li>
+            <li>Dragon Age: Inquisition</li>
+            <li>Dying Light</li>
+            <li>Fifa 16</li>
+            <li>Final Fantasy Type-0 HD</li>
+            <li>Final Fantasy XV</li>
+            <li>Grand Theft Auto V</li>
+            <li>Motorcycle Club</li>
+            <li>Need for Speed: Rivals</li>
+            <li>Overwatch: Origins Edition</li>
+            <li>Ratchet & Clank</li>
+            <li>Rock Band 4 <i>(Equipment not available for rent)</i></li>
+            <li>Star Wars: Battlefront</li>
+            <li>Street Fighters V</li>
+            <li>The King of Fighters XIV</li>
+            <li>Titanfall 2</li>
+            <li>The Evil Within</li>
+            <li>Mortal Combat X</li>
+        </ul>
+
+        <button class="collapsible"><h1>Xbox 360</h1></button>
+        <ul class="games">
+            <li>Blur</li>
+            <li>Borderlands: The Pre-Sequel</li>
+            <li>Halo 3</li>
+        </ul>
+
+        <button class="collapsible"><h1>Xbox One</h1></button>
+        <ul class="games" style="columns:3">
+            <li>Army of Two: The Devil's Cartel</li>
+            <li>Battlefield 4</li>
+            <li>Call of Duty: Black Ops II</li>
+            <li>Dark Souls III</li>
+            <li>Dead Rising 3</li>
+            <li>Devil May Cry</li>
+            <li>Fallout 4</li>
+            <li>Farcry 4</li>
+            <li>Gears of War 4</li>
+            <li>Just Dance 2014</li>
+            <li>Killer Instinct</li>
+            <li>Madden 16</li>
+            <li>Marvel vs. Capcom</li>
+            <li>NHL 15</li>
+            <li>Overwatch: Origins Edition</li>
+            <li>Titanfall</li>
+            <li>Tom Clancy's The Division</li>
+            <li>Quantum Break</li>
+        </ul>
+        </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var games = this.nextElementSibling;
+                if (games.style.display === "block") {
+                    games.style.display = "none";
+                } else {
+                    games.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    </body>
 <footer>
-	
-	<br>
-<!--FOOTER-->	
-	<div class="foot">
+
+    <br>
+    <!--FOOTER-->	
+    <div class="foot">
         <!-- EGS LOGO -->
-		<!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
-        
+        <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
+
         <!--Nav Links-->
-		<div class="footlinks">
+        <div class="footlinks">
             <div class="subfootlinks1">
                 <h3>Site Navigation</h3>
                 <a href="about.html">About Us</a>
@@ -202,30 +202,38 @@
                 <a href="membership.html">Membership</a>
                 <a href="events.html">Upcoming Events</a>
             </div>
-                
+
             <div class="subfootlinks2">
                 <h3>Communities</h3>
                 <a href="blizzard.html">Blizzard Gaming</a>
                 <a href="pokemon.html">Pokemon League</a>
                 <a href="speedruns.html">Speedruns Rochester</a>
             </div>
-		</div>
-		
-		<!--Social Media Link Bar-->
-		<div class="connect">
-			<h3>Connect With Us</h3><br>
-			<div class="sociallinks" id="navbar">
-				<a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
-				<a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a> 
-				<a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a> 
-				<a href="https://www.discord.gg/egsrit" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
-				<a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a> 
-			</div>
-		</div>
-		
-		<p class="copyright">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Stoney Reed
-		</p>
-	</div>
-	
+            <div class="subfootServer">
+                <h3>Servers</h3>
+                <span><b>Minecraft:</b></span>
+                <span>Vanilla Survival: mc.server-egsrit.com</span>
+                <span>Modded Survival: mc.server-egsrit.com:12345</span>
+                <span><b>Gary's Mod:</b></span>
+                <span>gm.server-egsrit.com</span>
+            </div>
+        </div>
+
+        <!--Social Media Link Bar-->
+        <div class="connect">
+            <h3>Connect With Us</h3><br>
+            <div class="sociallinks" id="navbar">
+                <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
+                <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a> 
+                <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a> 
+                <a href="https://www.discord.gg/egsrit" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
+                <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a> 
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Stoney Reed
+        </p>
+    </div>
+
 </footer>
 </html>
