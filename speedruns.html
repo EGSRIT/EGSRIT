@@ -1,112 +1,97 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-    <head>
-        <title>Speedruns Rochester - Electronic Gaming Society at RIT</title>
+<head>
+	<title>Speedruns Rochester - Electronic Gaming Society at RIT</title>
+	
+	<meta name="viewport" content="wideth=device-width, initial-scale=1">
+	<meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
+	
+	<link type="text/css" rel="stylesheet" href="style.css">
+	
+	<style type="text/css">
+		body { margin:0; }
+	</style>
+	
+</head>
+<body>
+<!--Banner Image with Logo-->
+	<img id="banner" src="images/header.png" align=center width=100%>
+	
+<!--Navigation Bar-->
+	<div class="nav" id="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="membership.html">Membership</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="communities.html">Communities</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	
+<!--Sticky Function-->
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
 
-        <meta name="viewport" content="wideth=device-width, initial-scale=1">
-        <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
+<div class="content">	
+		<img style="margin:10px 30px" src="images/speedrunsgroup.jpg" align=right width="350px" alt="Speedruns Rochester Logo">
+		<h1>Speedruns Rochester</h1> 
 
-        <link type="text/css" rel="stylesheet" href="style.css">
+		<p><b>RIT Representatives</b> Scott "swc19" Csefai 
+		</p>
+		<p>Speedruns Rochester is an intercollegiate group of gamers within the Rochester area dedicated to beating games as quickly as possible. Join them on Saturdays from noon to 6pm in Gleason Hall Room 1149. They also host several speedrunning marathons each semester.</p>
+		<p><b>Contact:</b> speedrunning@egsrit.com</p>
+		<a href="https://twitter.com/speedrunroc" id="commlink"><img src="images/icons/twitter.png" alt="Twitter Link"></a>
+		<a href="https://www.discord.gg/srroc" id="commlink"><img src="images/icons/discord.png" alt="Discord Link"></a>
+		<a href="https://www.twitch.tv/speedrunsrochester" id="commlink"><img src="images/icons/twitch.png" alt="Twitch Link"></a> 
+		<br>		
+</div>
 
-        <style type="text/css">
-            body { margin:0; }
-        </style>
-
-    </head>
-    <body>
-        <!--Banner Image with Logo-->
-        <img id="banner" src="images/header.png" align=center width=100%>
-
-        <!--Navigation Bar-->
-        <div class="nav" id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="communities.html">Communities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!--Sticky Function-->
-        <script>
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-        </script>
-
-        <div class="content">	
-            <img style="margin:0px 30px" src="images/speedrunsroc.png" align=right width="300px" alt="Speedruns Rochester Logo">
-            <h1>Speedruns Rochester</h1> 
-            <p><b>RIT Representatives</b> Blake "CorundumCore" Sullivan
-                <br><b>U of R Representatives</b> Rose "Plof27" Peck
-            </p>
-            <p>Speedruns Rochester is an intercollegiate group of gamers within the Rochester area dedicated to beating games as quickly as possible. Join them on Saturdays from noon to 6pm in Gleason Hall Room 1149. They also host several speedrunning marathons each semester.</p>
-            <p><b>Contact:</b> speedrunning@egsrit.com</p>
-            <a href="https://twitter.com/speedrunroc" id="commlink"><img src="images/icons/twitter.png" alt="Twitter Link"></a>
-            <a href="https://www.discord.gg/srroc" id="commlink"><img src="images/icons/discord.png" alt="Discord Link"></a>
-            <a href="https://www.twitch.tv/speedrunsrochester" id="commlink"><img src="images/icons/twitch.png" alt="Twitch Link"></a> 
-            <br>		
-        </div>
-
-    </body>
-    <footer>
-
-        <br>
-        <!--FOOTER-->	
-        <div class="foot">
-            <!-- EGS LOGO -->
-            <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
-
-            <!--Nav Links-->
-            <div class="footlinks">
-                <div class="subfootlinks1">
-                    <h3>Site Navigation</h3>
-                    <a href="about.html">About Us</a>
-                    <a href="library.html">Game & Server Library</a>
-                    <a href="membership.html">Membership</a>
-                    <a href="events.html">Upcoming Events</a>
-                </div>
-
-                <div class="subfootlinks2">
-                    <h3>Communities</h3>
-                    <a href="blizzard.html">Blizzard Gaming</a>
-                    <a href="pokemon.html">Pokemon League</a>
-                    <a href="speedruns.html">Speedruns Rochester</a>
-                </div>
-                <div class="subfootServer">
-                    <h3>Servers</h3>
-                    <span><b>Minecraft:</b></span>
-                    <span>Vanilla Survival: mc.server-egsrit.com</span>
-                    <span>Modded Survival: mc.server-egsrit.com:12345</span>
-                    <span><b>Gary's Mod:</b></span>
-                    <span>gm.server-egsrit.com</span>
-                </div>
-            </div>
-
-            <!--Social Media Link Bar-->
-            <div class="connect">
-                <h3>Connect With Us</h3><br>
-                <div class="sociallinks" id="navbar">
-                    <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
-                    <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a> 
-                    <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a> 
-                    <a href="https://www.discord.gg/egsrit" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
-                    <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a> 
-                </div>
-            </div>
-
-            <p class="copyright">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Stoney Reed
-            </p>
-        </div>
-
-    </footer>
+</body>
+<footer>
+<!--FOOTER-->	
+	<div class="foot">
+		<a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>
+		
+		<!--Social Media Link Bar-->
+		<div class="connect">
+			<p style="display:inline">Connect With Us</p><br>
+			<div class="sociallinks" id="navbar">
+				<a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
+				<a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a> 
+				<a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a> 
+				<a href="https://www.discord.gg/egsrit" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
+				<a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a> 
+			</div>
+		</div>
+		
+		<!--Nav Links-->
+		<div class="footlinks">
+			<p style="font-size:15px;display:inline"><b>Site Navigation</b></p><br>
+			<a href="about.html">About Us</a><br>
+			<a href="library.html">Game & Server Library</a><br>
+			<a href="membership.html">Membership</a><br>
+			<a href="events.html">Upcoming Events</a><br>
+					
+			<p style="font-size:15px;display:inline"><b>Communities</b></p><br>
+			<a href="blizzard.html">Blizzard Games</a><br>
+			<a href="pokemon.html">Pokemon League</a><br>
+			<a href="speedruns.html">Speedruns Rochester</a><br>
+		</div>
+		
+		<p style="font-size:10px;padding:5px" align="center">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Stoney Reed
+		</p>
+	</div>
+	
+</footer>
 </html>
