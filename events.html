@@ -1,120 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Events - Electronic Gaming Society at RIT</title>
 
-        <meta name="viewport" content="wideth=device-width, initial-scale=1">
-        <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
+<head>
+    <title>Events - Electronic Gaming Society at RIT</title>
 
-        <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="wideth=device-width, initial-scale=1">
+    <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
 
-        <style type="text/css">
-            body { margin:0; }
-        </style>
+    <link type="text/css" rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
-        <!--Banner Image with Logo-->
-        <img id="banner" src="images/header.png" align=center width=100%>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
 
-        <!--Navigation Bar-->
-        <div class="nav" id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="communities.html">Communities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+</head>
 
-        <!--Sticky Function-->
-        <script>
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
+<body>
+    <!--Banner Image with Logo-->
+    <img id="banner" src="images/header.png" align=center width=100%>
+
+    <!--Navigation Bar-->
+    <div class="nav" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="communities.html">Communities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--Sticky Function-->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
             }
-        </script>
+        }
+    </script>
 
-        <div class="content">	
-            <h1>Weekly E-Board Meetings</h1>
-            <p>Every Sunday from 11am to 12pm, our e-board members meet in Campus Center 1010-1015 to discuss important club matters and plan future events. While these meetings are not mandatory, we encourage our members to attend and participate in the conversation. 
+    <div class="content">
+        <h1>Weekly E-Board Meetings</h1>
+        <p>Every Sunday from 11am to 12pm, our e-board members meet in either the Campus Center 1010-1015 or online via our Discord to discuss important club matters and plan future events. While these meetings are not mandatory, we encourage our members
+            to attend and participate in the conversation.
             <hr>
             <img style="margin:30px" src="images/weekly.jpg" align=right width="350px" alt="Weekly Game Night">
             <h1>Weekly Game Nights</h1>
-            <p>Join us every Wednesday from 8pm to 11pm in the SAU Davis Room. Each week we set up a bunch of our consoles with our favorite games for everyone to play. We also have a different game featured each week that we project on the big screen. Have a suggestion for a feature? Submit it <a href="https://poll.ly/#/Gx8ldBQ7">here</a>!</p>
+            <p>Join us every Wednesday from 7pm to 10pm in the SAU Davis Room. Each week we set up a bunch of our consoles with our favorite games for everyone to play. We also have a different game featured each week that we project on the big screen. Have
+                a suggestion for a feature? Submit it <a href="https://poll.ly/#/Gx8ldBQ7">here</a>!</p>
             <p>Feel free to bring your own games and consoles, too. We have plenty of TVs to spare!</p>
             <hr>
             <h1>Monthly Events</h1>
             <p>Our monthly events take place once per month. These events are typically paid-entry with food and prized tournaments. The games we play at these events follow a new and unique theme each month. Have a suggestion for a theme? Submit it <a href="https://poll.ly/#/2MAaMw02">here</a>!</p>
-            <p><b>Upcoming Monthlies</b></p>
-            <ul id="schedule">
-                <li><b><!--Date--></b>TBD</li>
-            </ul>
+            <!--<p><b>Upcoming Monthlies</b></p>
+             <ul id="schedule">
+                <li><b>Date
+            </b>TBD</li>
+            </ul> -->
             <hr>
-            <h1>Tournaments</h1>
-            <p>TBD</p>
+            <img style="margin:30px" src="images/zerofestrecent.jpg" align=right width="350px" alt="ZeroFest Game Night">
+            <h1>ZeroFest/Tigers Play Games</h1>
+            <p>For Freshman Orentation, Electronic Gaming Society and other gaming groups on campus host a huge gaming event across the entire Student Alumni Union called ZeroFest/Tigers Play Games. It runs from 8pm to 1am, and usually over 800 students
+                stop by in one night, you don't want to miss this!<br><br>Learn about all of the gaming clubs on campus all in one spot, and try out their inventory as well as ask any questions to their board members. From Smash Bros to Beat Saber, Board
+                Games to Rhythm Games, there is something for everyone! This event is geared towards incoming freshman, but is open to all RIT students.</p>
             <hr>
-            <h1>LAN Parties</h1>
-            <p>TBD</p>
+    </div>
 
+</body>
+<footer>
 
-        </div>
+    <br>
+    <!--FOOTER-->
+    <div class="foot">
+        <!-- EGS LOGO -->
+        <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
 
-    </body>
-    <footer>
-
-        <br>
-        <!--FOOTER-->
-        <div class="foot">
-            <!-- EGS LOGO -->
-            <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
-
-            <!--Nav Links-->
-            <div class="footlinks">
-                <div class="subfootlinks1">
-                    <h3>Site Navigation</h3>
-                    <a href="about.html">About Us</a>
-                    <a href="library.html">Game & Server Library</a>
-                    <a href="membership.html">Membership</a>
-                    <a href="events.html">Upcoming Events</a>
-                </div>
-
-                <div class="subfootlinks2">
-                    <h3>Communities</h3>
-                    <a href="blizzard.html">Blizzard Gaming</a>
-                    <a href="pokemon.html">Pokemon League</a>
-                    <a href="speedruns.html">Speedruns Rochester</a>
-                </div>
-                <div class="subfootServer">
-                    <h3>Servers</h3>
-                    <span><b>Minecraft:</b></span>
-                    <span>Spigot Server: mc.server-egsrit.com</span>
-                </div>
+        <!--Nav Links-->
+        <div class="footlinks">
+            <div class="subfootlinks1">
+                <h3>Site Navigation</h3>
+                <a href="about.html">About Us</a>
+                <a href="library.html">Game & Server Library</a>
+                <a href="membership.html">Membership</a>
+                <a href="events.html">Upcoming Events</a>
             </div>
 
-            <!--Social Media Link Bar-->
-            <div class="connect">
-                <h3>Connect With Us</h3>
-                <div class="sociallinks" id="navbar">
-                    <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
-                    <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a>
-                    <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a>
-                    <a href="https://www.discord.gg/djgDM7F" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
-                    <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a>
-                </div>
+            <div class="subfootlinks2">
+                <h3>Communities</h3>
+                <a href="communities.html">Pokemon League</a>
+                <a href="communities.html">Speedruns Rochester</a>
+                <a href="communities.html">COD Zombies</a>
+                <a href="communities.html">RecreateRIT</a>
             </div>
-
-            <p class="copyright">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Scott Csefai
-            </p>
+            <div class="subfootServer">
+                <h3>Servers</h3>
+                <span><b>Minecraft:</b></span>
+                <span>Spigot Server: mc.server-egsrit.com</span>
+            </div>
         </div>
 
-    </footer>
+        <!--Social Media Link Bar-->
+        <div class="connect">
+            <h3>Connect With Us</h3>
+            <div class="sociallinks" id="navbar">
+                <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
+                <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a>
+                <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a>
+                <a href="https://www.discord.gg/djgDM7F" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
+                <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2022 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter | Webmaster Scott Csefai
+        </p>
+    </div>
+
+</footer>
+
 </html>
