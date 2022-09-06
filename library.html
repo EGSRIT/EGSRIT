@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Game Library - Electronic Gaming Society at RIT</title>
 
-        <meta name="viewport" content="wideth=device-width, initial-scale=1">
-        <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
+<head>
+    <title>Game Library - Electronic Gaming Society at RIT</title>
 
-        <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="wideth=device-width, initial-scale=1">
+    <meta name="description" content="This website is dedicated to the Electronic Gaming Society at the Rochester Institute of Technology.">
 
-        <style type="text/css">
-            body { margin:0; }
-        </style>
+    <link type="text/css" rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
-        <!--Banner Image with Logo-->
-        <img id="banner" src="images/header.png" align=center width=100%>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
 
-        <!--Navigation Bar-->
-        <div class="nav" id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="communities.html">Communities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+</head>
 
-        <!--Sticky Function-->
-        <script>
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
+<body>
+    <!--Banner Image with Logo-->
+    <img id="banner" src="images/header.png" align=center width=100%>
+
+    <!--Navigation Bar-->
+    <div class="nav" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="communities.html">Communities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--Sticky Function-->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
             }
-        </script>
+        }
+    </script>
 
-        <div class="content">	
-            <p>This is a growing list of all the games and game servers owned by EGS. <a href="membership.html">Premium Members</a> have the ability to rent game discs for one week at a time.</p>
+    <div class="content">
+        <p>This is a growing list of all the games and game servers owned by EGS. <a href="membership.html">Premium Members</a> have the ability to rent game discs for one week at a time. This list has not been updated since 2019. Please be aware that we
+            have extended our library and will be updating this list soon.</p>
 
-            <button class="collapsible"><h1>EGS Game Servers</h1></button>
-            <ul class="games">
-                <li><b>Minecraft</b> 
+        <button class="collapsible"><h1>EGS Game Servers</h1></button>
+        <ul class="games">
+            <li><b>Minecraft</b>
                 <li style="margin:0px 0px 0px 10px">Spigot Server: mc.server-egsrit.com</li>
-            </ul>
+        </ul>
 
         <button class="collapsible"><h1>Nintendo Gamecube</h1></button>
         <ul class="games">
@@ -162,7 +170,7 @@
             <li>Tom Clancy's The Division</li>
             <li>Quantum Break</li>
         </ul>
-        </div>
+    </div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -181,53 +189,55 @@
         }
     </script>
 
-    </body>
-    <footer>
+</body>
+<footer>
 
-        <br>
-        <!--FOOTER-->
-        <div class="foot">
-            <!-- EGS LOGO -->
-            <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
+    <br>
+    <!--FOOTER-->
+    <div class="foot">
+        <!-- EGS LOGO -->
+        <!-- <a href="index.html"><img id="footlogo" src="images/whitelogo.png"></a>-->
 
-            <!--Nav Links-->
-            <div class="footlinks">
-                <div class="subfootlinks1">
-                    <h3>Site Navigation</h3>
-                    <a href="about.html">About Us</a>
-                    <a href="library.html">Game & Server Library</a>
-                    <a href="membership.html">Membership</a>
-                    <a href="events.html">Upcoming Events</a>
-                </div>
-
-                <div class="subfootlinks2">
-                    <h3>Communities</h3>
-                    <a href="blizzard.html">Blizzard Gaming</a>
-                    <a href="pokemon.html">Pokemon League</a>
-                    <a href="speedruns.html">Speedruns Rochester</a>
-                </div>
-                <div class="subfootServer">
-                    <h3>Servers</h3>
-                    <span><b>Minecraft:</b></span>
-                    <span>Spigot Server: mc.server-egsrit.com</span>
-                </div>
+        <!--Nav Links-->
+        <div class="footlinks">
+            <div class="subfootlinks1">
+                <h3>Site Navigation</h3>
+                <a href="about.html">About Us</a>
+                <a href="library.html">Game & Server Library</a>
+                <a href="membership.html">Membership</a>
+                <a href="events.html">Upcoming Events</a>
             </div>
 
-            <!--Social Media Link Bar-->
-            <div class="connect">
-                <h3>Connect With Us</h3>
-                <div class="sociallinks" id="navbar">
-                    <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
-                    <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a>
-                    <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a>
-                    <a href="https://www.discord.gg/djgDM7F" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
-                    <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a>
-                </div>
+            <div class="subfootlinks2">
+                <h3>Communities</h3>
+                <a href="communities.html">Pokemon League</a>
+                <a href="communities.html">Speedruns Rochester</a>
+                <a href="communities.html">COD Zombies</a>
+                <a href="communities.html">RecreateRIT</a>
             </div>
-
-            <p class="copyright">&copy; 2019 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter  |  Webmaster Scott Csefai
-            </p>
+            <div class="subfootServer">
+                <h3>Servers</h3>
+                <span><b>Minecraft:</b></span>
+                <span>Spigot Server: mc.server-egsrit.com</span>
+            </div>
         </div>
 
-    </footer>
+        <!--Social Media Link Bar-->
+        <div class="connect">
+            <h3>Connect With Us</h3>
+            <div class="sociallinks" id="navbar">
+                <a href="https://www.facebook.com/egsrit"><img src="images/icons/facebook-white.png" alt="Facebook Link"></a>
+                <a href="https://www.twitter.com/egsrit" id="twitter"><img src="images/icons/twitter-white.png" alt="Twitter Link"></a>
+                <a href="https://www.instagram.com/egsrit" id="instagram"><img src="images/icons/instagram-white.png" alt="Instagram Link"></a>
+                <a href="https://www.discord.gg/djgDM7F" id="discord"><img src="images/icons/discord-white.png" alt="Discord Link"></a>
+                <a href="https://www.twitch.tv/egsrit" id="twitch"><img src="images/icons/twitch-white.png" alt="Twitch Link"></a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2022 Electronic Gaming Society at RIT<br>Website Design by Lauren Suter | Webmaster Scott Csefai
+        </p>
+    </div>
+
+</footer>
+
 </html>
